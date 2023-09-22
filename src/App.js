@@ -42,6 +42,7 @@ import SnackbarProvider from "src/components/snackbar/snackbar-provider";
 import { SettingsProvider, SettingsDrawer } from "src/components/settings";
 // sections
 import { CheckoutProvider } from "src/sections/checkout/context";
+// import '@styles/global.css'
 // auth
 import { AuthProvider, AuthConsumer } from "src/auth/context/jwt";
 // import { AuthProvider, AuthConsumer } from 'src/auth/context/auth0';
