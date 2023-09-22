@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,300;1,400&display=swap");
+body,
+.css-1g4yje1 {
+  background-color: #f0f2f6;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+.agent_book_view_hero {
+  background-color: #1a1a33;
+  padding: 6.5em 0em 6.5em;
+}
+.revase_margin_top {
+  margin-top: -10%;
+  padding-bottom: 1.5rem;
+}
+.hero_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.hero_right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.avatarImage {
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.edit_btn_group_agent_view {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.agent_hero_title {
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -1.68px;
+}
+
+.agent_left_btn {
+  display: flex;
+  justify-content: end;
+  gap: 24px;
+}
+.btn_view_export {
+  background: none;
+  color: var(--primary-action, #5482f9);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  gap: 4px;
+}
+.btn_primary_booked {
+  color: #1a1a33;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  cursor: none;
+  font-family: "Inter", sans-serif;
+
+  transition: all 0.2s ease-in-out;
+  gap: 4px;
+  background: #c7d2ee;
+  padding: 0px 36px;
+  flex-shrink: 0;
+  height: 40px;
+  border-radius: 24px;
+  cursor: default;
+}
+.btn_primary {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  gap: 4px;
+  background: #5482f9;
+  padding: 0px 36px;
+  flex-shrink: 0;
+  height: 40px;
+  border-radius: 24px;
+}
+.btn_outline {
+  color: #5482f9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  gap: 4px;
+  border-radius: 100px;
+  border: 1px solid #5482f9;
+  padding: 0px 46px;
+  flex-shrink: 0;
+  height: 40px;
+  background: transparent;
+}
+.btn_primary:hover {
+  opacity: 0.7;
+}
+.list_books {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0;
+}
+
+/* book card */
+.agent_view_book_card {
+  display: flex;
+  gap: 16px;
+  background: #fff;
+  border-radius: 16px;
+  padding-right: 1em;
+  flex-direction: column;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.agent_book_image {
+  width: 100%;
+  height: 138px;
+  border-radius: 16px;
+}
+.agent_book_heading {
+  color: #737394;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  text-transform: uppercase;
+}
+.agent_book_title {
+  color: #323257;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.72px;
+  font-family: "Jost", sans-serif;
+}
+.book_details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.agent_book_price_edit_menu {
+  width: 312px;
+  min-width: 280px;
+  max-width: 560px;
+  border-radius: 16px;
+  background: var(--background-01, #fff);
+  box-shadow: 0px 0px 10px 0px rgba(26, 26, 51, 0.08);
+}
+
+.modal_close {
+  display: flex;
+  justify-content: end;
+}
+.agent_left_price {
+  display: flex;
+  align-items: center;
+  gap: 1.6em;
+}
+.agent_left_price_h4 {
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0; /* 114.286% */
+  margin: 0;
+}
+.agent_left_price_pera {
+  color: #c7d2ee;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.48px;
+  padding-top: 0.5em;
+}
+.wrap_sds {
+  display: flex;
+  flex-direction: column;
+  gap: -1px !important;
+  padding-top: 3.9em;
+}
+/* responsive  */
+
+@media (min-width: 1024px) {
+  .hero_right {
+    max-width: 720px;
+  }
+  .agent_left_price_h4 {
+    font-size: 42px;
+  }
+  .wrap_sds {
+    padding-top: 2.9em;
+  }
+  .revase_margin_top {
+    margin-top: -2.1%;
+  }
+  .edit_btn_group_agent_view {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  .hero_wrap {
+    flex-direction: row;
+  }
+  .agent_view_book_card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    background: #fff;
+    border-radius: 16px;
+    height: 138px;
+    padding-right: 1em;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .agent_book_image {
+    width: 143px;
+    height: 138px;
+    border-radius: 16px 0px 0px 16px;
+  }
+
+  .agent_book_heading {
+    color: #737394;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
+    text-transform: uppercase;
+  }
+  .agent_book_title {
+    font-size: 24px;
+
+    line-height: 36px; /* 150% */
+  }
+  .book_details {
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+  }
+  .agent_hero_title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .avatarImage {
+    width: 6.5em;
+    height: 6.5em;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+}
+.pera {
+  color: #1a1a33;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.input_agent_boook {
+  border-radius: 8px;
+  border: 1px solid #b6c4e8;
+  padding: 4px 0px 4px 16px;
+  display: inline-flex;
+  align-items: center;
+  height: 56px;
+  color: #1a1a33;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.btn_add_price {
+  color: #5482f9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 13px;
+  margin-left: auto;
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .agent_view_book_card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 1em;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .revase_margin_top {
+    margin-top: -2.1%;
+  }
+  .wrap_sds {
+    padding-top: 2.9em;
+  }
+
+  .edit_btn_group_agent_view {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  .book_details {
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+  }
+  .agent_book_image {
+    width: 143px;
+    height: 138px;
+    border-radius: 16px 0px 0px 16px;
+  }
+  .agent_hero_title {
+    color: #fff;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* 114.286% */
+    letter-spacing: -1.68px;
+  }
+  .avatarImage {
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  .agent_book_title {
+    font-size: 14px;
+
+    line-height: 16px; /* 150% */
+  }
+  .agent_book_heading {
+    font-size: 10px;
+
+    font-weight: 500;
+    line-height: 1.2; /* 128.571% */
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero_right {
+    max-width: 100%;
+  }
+}

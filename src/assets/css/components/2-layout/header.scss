@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 24px 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-logo {
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &.active {
+    background: $primary;
+  }
+}
+@mixin header-md-lg {
+  .header {
+    padding: 16px 0;
+  }
+}

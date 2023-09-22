@@ -1,0 +1,265 @@
+// 1360px
+@include xxxlg-xxxxlg {
+  // base start
+  .auto__container {
+    padding: 0 40px;
+  }
+  h1 {
+    font-size: 76px;
+    line-height: 88px;
+  }
+  h2 {
+    font-size: 76px;
+    line-height: 88px;
+    &.sm {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  h4 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  h5 {
+    font-size: 22px;
+    line-height: 34px;
+  }
+  p {
+    &.big {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .number {
+    font-size: 48px;
+    &.sm {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+  // base end
+  //   client-view page start
+  @include hero-xxxlg-xxxxlg;
+  @include cards-xxxlg-xxxxlg;
+  @include days-xxxlg-xxxxlg;
+  //   client-view page end
+
+  //   client-book-view page start
+  @include review-xxxlg-xxxxlg;
+  //   client-book-view page end
+}
+// 1280px
+@include xxlg-xxxlg {
+  // base start
+  h1 {
+    font-size: 68px;
+    line-height: 78px;
+  }
+  h2 {
+    font-size: 68px;
+    line-height: 78px;
+    &.sm {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  // base end
+  //   client-view page start
+  @include intro-xxlg-xxxlg;
+  @include hero-xxlg-xxxlg;
+  @include days-xxlg-xxxlg;
+  //   client-view page end
+  //   client-book-view page start
+  @include info-xxlg-xxxlg;
+  @include review-xxlg-xxxlg;
+  @include collapse-xxlg-xxxlg;
+  //   client-book-view page end
+}
+// 1180px
+@include xlg-xxlg {
+  // base start
+  .auto__container {
+    padding: 0 32px;
+  }
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  h2 {
+    font-size: 60px;
+    line-height: 70px;
+    &.sm {
+      font-size: 34px;
+      line-height: 44px;
+    }
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 48px;
+  }
+  h4 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    &.big {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .number {
+    font-size: 38px;
+    &.sm {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  .caption {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  @include footer-xlg-xxlg;
+  // base end
+  //   client-view page start
+  @include intro-xlg-xxlg;
+  @include hero-xlg-xxlg;
+  @include days-xlg-xxlg;
+  //   client-view page end
+  //   client-book-view page start
+  @include review-xlg-xxlg;
+  //   client-book-view page end
+}
+// 1024px
+@include lg-xlg {
+  .auto__container {
+    padding: 0 24px;
+  }
+  .button {
+    &.book {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .wrapper {
+    &.pb {
+      padding-bottom: 140px;
+    }
+  }
+  @include footer-lg-xlg;
+  //   client-view page start
+  @include cards-lg-xlg;
+  @include days-lg-xlg;
+  //   client-view page end
+  //   client-book-view page start
+  @include review-lg-xlg;
+  @include info-lg-xlg;
+  @include collapse-lg-xlg;
+  //   client-book-view page end
+}
+// 940px
+@include extra-lg-xlg {
+  //   client-view page start
+  @include days-extra-lg-xlg;
+  @include hero-extra-lg-xlg;
+  //   client-view page end
+}
+// 840px
+@include md-lg {
+  // base start
+  h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  h2 {
+    font-size: 52px;
+    line-height: 62px;
+    &.sm {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @include header-md-lg;
+  @include footer-md-lg;
+  // base end
+  //   client-view page start
+  @include hero-md-lg;
+  @include intro-md-lg;
+  @include cards-md-lg;
+  @include days-md-lg;
+  //   client-view page end
+  //   client-book-view page start
+  @include info-md-lg;
+  @include review-md-lg;
+  //   client-book-view page end
+}
+// 700px
+@include sm-md {
+  //   client-view page start
+  @include footer-sm-md;
+  @include days-sm-md;
+  @include hero-sm-md;
+  //   client-view page end
+  //   client-book-view page start
+  @include review-sm-md;
+  //   client-book-view page end
+}
+// 540px
+@include xsm-sm {
+  // base start
+  @include footer-xsm-sm;
+
+  h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  h2 {
+    font-size: 42px;
+    line-height: 52px;
+    &.sm {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @include nav-xsm-sm;
+  // base end
+  //   client-view page start
+  @include days-xsm-sm;
+  @include hero-xsm-sm;
+  //   client-view page end
+
+  //   client-book-view page start
+  @include collapse-xsm-sm;
+  //   client-book-view page end
+}
+// 390px
+@include xxsm-xsm {
+  @include intro-xxsm-xsm;
+}

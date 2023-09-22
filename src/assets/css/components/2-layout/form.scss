@@ -1,0 +1,237 @@
+.input {
+  .caption {
+    margin-bottom: 12px;
+    color: $content5;
+    white-space: nowrap;
+  }
+}
+.spinbox {
+  display: flex;
+  align-items: center;
+  &__btn {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    svg {
+      width: 20px;
+      height: 20px;
+      color: $content5;
+    }
+  }
+  p {
+    margin: 0 2px;
+    width: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+.date {
+  &Input {
+    .react-datepicker {
+      font-family: $inter;
+      border: 0;
+      box-shadow: 0px 3px 6px rgba($color: $black, $alpha: 0.1);
+      border-radius: 16px;
+      z-index: 3;
+      &__triangle {
+        display: none;
+        margin-left: -16px !important;
+        border: 0;
+        width: 16px !important;
+        border: 0 !important;
+        height: 16px;
+        transform: rotate(45deg) !important;
+        top: -8px !important;
+        background: $primary;
+        left: 32px !important;
+        margin: 0 !important;
+        &::before {
+          display: none !important;
+        }
+        &::after {
+          display: none !important;
+        }
+      }
+
+      &__input-container {
+        input {
+          font-family: $inter;
+          font-weight: 400;
+          font-size: 18px;
+          width: 183px;
+          box-sizing: border-box;
+          line-height: 24px;
+          color: $content5;
+          box-sizing: border-box;
+          background: none;
+          resize: none;
+          &::placeholder {
+            color: #acacac;
+          }
+        }
+      }
+      &__header {
+        background: $primary;
+        padding: 10px 0;
+        border-radius: 16px 16px 0 0;
+      }
+      &__navigation {
+        top: 6px;
+        &-icon {
+          &::before {
+            border-color: $white;
+          }
+        }
+      }
+      &__month-container {
+        color: #969eac;
+        font-size: 0.8rem;
+        font-family: $inter;
+      }
+      &__month {
+        padding: 10px 0;
+      }
+      &__current {
+        &-month {
+          color: $white;
+          font-weight: 700;
+          border-radius: 0 0 16px 16px;
+        }
+      }
+      &__day {
+        font-size: 12px;
+        border-radius: 50%;
+        width: 2rem;
+        line-height: 2rem;
+        &--selected {
+          background: $primary;
+        }
+        &--keyboard-selected {
+          color: $white;
+          background: $primary;
+        }
+        &--in-range {
+          background: $primary;
+        }
+        &--selecting-range-start {
+          background: $primary;
+        }
+        &--in-selecting-range {
+          background: $primary;
+          opacity: 0.9;
+        }
+        &-names {
+          margin-top: 12px;
+        }
+        &-name {
+          color: $white;
+        }
+      }
+      &-time {
+        &__header {
+          color: $white;
+        }
+      }
+      &__time {
+        &-list {
+          &-item {
+            &--selected {
+              background: $primary;
+            }
+          }
+        }
+      }
+      // react-datepicker__day
+      //   react-datepicker__day--006
+      //   react-datepicker__day--keyboard-selected
+      //   react-datepicker__day--in-selecting-range
+      //   react-datepicker__day--selecting-range-start
+    }
+  }
+}
+.customSelect {
+  position: relative;
+  z-index: 2;
+  &__selected {
+    position: relative;
+    width: 75px;
+    font-family: $inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $content5;
+    box-sizing: border-box;
+    padding-right: 32px;
+    cursor: pointer;
+    span {
+      @include ellipsis(1);
+    }
+    svg {
+      @include transition;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      @include transformY;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__options {
+    background: $bg1;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    @include transformX;
+    min-width: 100%;
+    width: 150px;
+    border-radius: 5px;
+    @include transition;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.2);
+    &-item {
+      position: relative;
+      width: 100%;
+      font-family: $inter;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $content1;
+      box-sizing: border-box;
+      padding: 16px;
+      cursor: pointer;
+      @include transition;
+      display: flex;
+      align-items: center;
+      &:first-child {
+        border-radius: 5px 5px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 5px 5px;
+      }
+      &:hover {
+        background: rgba($color: $bg6, $alpha: 0.2);
+      }
+    }
+  }
+  &.active {
+    z-index: 3;
+    .customSelect__selected {
+      svg {
+        transform: rotate(-180deg) translateY(50%);
+      }
+    }
+    .customSelect__options {
+      max-height: 400px;
+      overflow-y: auto;
+      opacity: 1;
+    }
+  }
+}

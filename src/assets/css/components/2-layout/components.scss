@@ -1,0 +1,138 @@
+h1 {
+  font-family: $mainFont;
+  font-weight: 500;
+  font-size: 84px;
+  line-height: 96px;
+  letter-spacing: -0.03em;
+  color: $content5;
+}
+
+h2 {
+  font-family: $mainFont;
+  font-weight: 500;
+  font-size: 84px;
+  line-height: 96px;
+  letter-spacing: -0.03em;
+
+  &.sm {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+h3 {
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 56px;
+  letter-spacing: -0.03em;
+}
+h4 {
+  font-family: $mainFont;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.03em;
+}
+h5 {
+  font-family: $mainFont;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+
+  text-transform: uppercase;
+}
+p {
+  font-family: $inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $content5;
+  &.big {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &.sm {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &.xsm {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &.italic {
+    font-style: italic;
+    line-height: 24px;
+  }
+}
+.caption {
+  font-family: $inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $content5;
+  &.sm {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.number {
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1;
+  color: $content5;
+  &.sm {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+.button {
+  background: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $inter;
+  font-weight: 500;
+  text-transform: uppercase;
+  @include transition;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.book {
+    background: $bg1;
+    padding: 16px 29px 15px 29px;
+    box-sizing: border-box;
+    color: $content1;
+    border-radius: 100px;
+  }
+  &.blue {
+    background: $bg6;
+    width: 100%;
+    max-width: 186px;
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 100px;
+    color: $content5;
+    text-transform: unset;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.wrapper {
+  overflow: hidden;
+  background: $bg2;
+  &.pb {
+    padding-bottom: 170px;
+  }
+}

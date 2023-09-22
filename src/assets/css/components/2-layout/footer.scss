@@ -1,0 +1,160 @@
+.footer {
+  width: 100%;
+  background: $bg2;
+  z-index: 10;
+  @include transition;
+  animation: footerAnim 0.3s ease-in-out;
+  display: none;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $bg6;
+    border-radius: 16px 0 0 0;
+    z-index: 0;
+  }
+  &.sticky {
+    display: block;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+  }
+  &__inner {
+    padding: 40px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    .number {
+      margin-right: 16px;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $content5;
+    margin-right: 24px;
+    &:nth-child(2) {
+      margin-right: 48px;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+}
+@keyframes footerAnim {
+  from {
+    opacity: 0;
+    transform: translateY(136px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@mixin footer-xlg-xxlg {
+  .footer {
+    &__inner {
+      padding: 24px 0;
+    }
+  }
+}
+@mixin footer-lg-xlg {
+  .footer {
+    &__link {
+      font-size: 14px;
+      line-height: 20px;
+      margin-right: 16px;
+      &:nth-child(2) {
+        margin-right: 24px;
+      }
+    }
+  }
+}
+@mixin footer-md-lg {
+  .footer {
+    &__inner {
+      padding: 16px 0;
+    }
+    &__links {
+      .button {
+        &.book {
+          padding: 14px 16px 13px 16px;
+        }
+      }
+    }
+    &__link {
+      margin-right: 12px;
+      &:nth-child(2) {
+        margin-right: 12px;
+      }
+    }
+    &__price {
+      flex-direction: column;
+      .number {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@mixin footer-sm-md {
+  .footer {
+    &__inner {
+      flex-direction: column;
+      justify-content: unset;
+    }
+    &__links {
+      order: 1;
+      margin-bottom: 16px;
+    }
+    &__price {
+      order: 2;
+      flex-direction: row;
+      .number {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+@mixin footer-xsm-sm {
+  .footer {
+    &__price {
+      order: 1;
+      margin-bottom: 8px;
+    }
+    &__links {
+      margin-bottom: 0;
+      order: 2;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .button {
+        &.book {
+          margin-top: 12px;
+          width: 100%;
+          order: 2;
+        }
+      }
+    }
+    &__link {
+      order: 1;
+      margin-right: 16px;
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+  }
+}
