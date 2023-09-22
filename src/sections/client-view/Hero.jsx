@@ -68,7 +68,7 @@ export default function Hero() {
               />
             </div>
             <div className="input">
-              <div className="caption sm">Date</div>
+              <div className="caption sm ">Date</div>
               <div className="hero__date">
                 {isEdit ? (
                   <DateInput

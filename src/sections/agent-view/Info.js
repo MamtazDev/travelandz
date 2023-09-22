@@ -13,49 +13,53 @@ const AgentInfo = () => {
   return (
     <div>
       <Container className="info-tab d-flex justify-between">
-        <Grid xs={12} md={4} lg={4} container alignItems={"start"}>
-          <Grid display={"flex"} gap={3} justifyContent={"space-between"}>
-            <Counter label={"number of days"} number={7} />
-            <Counter label={"people"} number={3} />
+        <div className="flex flex-wrap gap-[40px] items-center mb-[78px]">
+          <Counter label={"number of days"} number={7} />
+          <Counter label={"people"} number={3} />
+          <div>
+            <label
+              htmlFor=""
+              className="text-uppercase label pl-3 text-[#1A1A33] text-[12px] font-[500]"
+            >
+              place
+            </label>
+            <select className="bg-transparent text-[#00F]">
+              <option>Spain</option>
+              <option>Franch</option>
+            </select>
+          </div>
 
-            <div>
-              <label htmlFor="" className="text-uppercase label pl-3">
-                place
-              </label>
-              <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">Age</InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  // value={age}
-                  label="Age"
-                  // onChange={handleChange}
-                >
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
-                </Select>
-              </FormControl>
-            </div>
-          </Grid>
-        </Grid>
-        <Grid xs={12} md={7} lg={7} justifyContent={"space-between"} container>
+          <div>
+            <label
+              htmlFor=""
+              className="text-uppercase label pl-3 text-[#1A1A33] text-[12px] font-[500]"
+            >
+              place
+            </label>
+            <select className="bg-transparent text-[#00F]">
+              <option>Spain</option>
+              <option>Franch</option>
+            </select>
+          </div>
           <Calender />
           <div>
-            <label htmlFor="" className="text-uppercase">
+            <label
+              htmlFor=""
+              className="text-uppercase text-[#1A1A33] text-[12px] font-[500]"
+            >
               FOOTPRINT
             </label>
             <div className="d-flex align-center">
               <p>{itinerary?.itinerary?.project?.priority}</p>
-              {/* <p>High</p> */}
+              <p className="text-[18px] text-[#1A1A33] font-[400]">High</p>
               <img className="small-img" src={info} alt="info" />
             </div>
           </div>
-          <Grid display={"flex"} alignSelf={"center"} justifySelf={"end"}>
+          <div className="text-[#5482F9] text-[16px] font-[500] gap-[24px] flex">
             <Link>I want something lower</Link>
             <Link>Offsetting options</Link>
-          </Grid>
-        </Grid>
+          </div>
+        </div>
       </Container>
     </div>
   );
