@@ -1,9 +1,14 @@
+import { useContext } from "react";
 import AgentViewAccording from "../DaysAccording/According";
 import AgentHeader from "../Header";
 import AgentInfo from "../Info";
 import Hero from "../hero";
+import { CheckoutContext } from "src/sections/checkout/context/checkout-context";
 
 const AgentViewPage = () => {
+  const { itinerary } = useContext(CheckoutContext);
+
+  console.log(itinerary.itinerary, "city");
   const options = [
     {
       name: "Day 1. Barcelona",
@@ -40,13 +45,14 @@ const AgentViewPage = () => {
       <Hero />
       <AgentInfo />
       <div className=" space-y-7">
-        {options.map((op, index) => (
-          <AgentViewAccording
-            key={index}
-            dayName={op.name}
-            SubTitle={op.title}
-          />
-        ))}
+        {itinerary &&
+          itinerary?.itinerary?.itinerary?.map((op, index) => (
+            <AgentViewAccording
+              key={index}
+              dayName={op?.city}
+              SubTitle={op.title}
+            />
+          ))}
       </div>
     </main>
   );
